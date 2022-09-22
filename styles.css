@@ -164,7 +164,7 @@ span {
 .container {
   background-color: var(--white);
   padding: 0;
-  display: none;
+  /* display: none; */
 }
 
 .header {
@@ -231,7 +231,7 @@ span {
   padding: 2rem;
   text-align: center;
   border-radius: 3px;
-  /* display: none; */
+  display: none;
 }
 
 .result-box .top {
