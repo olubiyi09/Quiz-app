@@ -164,6 +164,7 @@ span {
 .container {
   background-color: var(--white);
   padding: 0;
+  margin: 0 1.5rem;
   /* display: none; */
 }
 
