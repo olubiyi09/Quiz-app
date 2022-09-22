@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* CUSTOM STYLING START HERE */
+/* CUSTOM STYLING START HERE */
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-sec);
+}
+
+.start-wrapper button {
+  border: none;
+  border-radius: 3px;
+  padding: 2rem 3.5rem;
+  color: var(--color-sec);
+  font-size: 2.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.start-wrapper button:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(247, 249, 250, 0.5);
+  transform: translateY(-0.1rem);
+  transition: all 0.3s;
+}
+
+/* INSTRUCTIONS MODAL START HERE */
+/* INSTRUCTIONS MODAL START HERE */
+
+.pop-up {
+  background-color: var(--white);
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 3px;
+  display: none;
+  animation: open 0.5s forwards;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pop-up h1 {
+  margin-bottom: 1rem;
+}
+
+.pop-up ol {
+  margin: 2rem auto;
+}
+
+.pop-up ol li {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+}
+
+span {
+  color: var(--color-sec);
+  font-weight: 600;
+}
+
+.pop-up .buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pop-up .buttons .continue {
+  margin-left: 2rem;
+}
+.pop-up .buttons .continue a {
+  text-decoration: none;
+  color: var(--white);
+}
+.pop-up .buttons .back a {
+  text-decoration: none;
+  color: var(--color-sec);
+}
+
+.pop-up button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: var(--color-sec);
+  color: var(--white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.buttons .back {
+  background-color: var(--white);
+  color: var(--color-sec);
+  border: 1px solid var(--color-sec);
+}
+.buttons .back:hover {
+  background-color: var(--color-grey);
+  transform: translateY(-0.1rem);
+  transition: all 0.3s;
+}
+.buttons .continue:hover {
+  transform: translateY(-0.1rem);
+  transition: all 0.3s;
+}
+
+/* QUIZ PAGE START HERE */
+/* QUIZ PAGE START HERE*/
+
+.quiz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffc291;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 0;
+  display: none;
+}
+
+.header {
+  background-color: var(--color-sec);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.time {
+  font-size: 1.6rem;
+}
+
+.time .sec {
+  background-color: var(--white);
+  color: var(--color-sec);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+#quiz {
+  max-width: 600px;
+  width: 100%;
+  padding: 3rem;
+}
+
+#question {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.choice-container {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: 1px solid #ffc291;
+}
+.choice-container:hover {
+  box-shadow: 0 0.4rem 0.4rem 0 var(--color-sec);
+  transform: translateY(-0.1rem);
+  transition: all 0.3s;
+}
+
+.choice-prefix {
+  background-color: var(--color-sec);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+}
+
+.choice-text {
+  padding: 0.6rem 1rem;
+  background-color: #fce7d6;
+  width: 100%;
+}
+
+/* RESULT BOX START HERE */
+/* RESULT BOX START HERE */
+.result-box {
+  background-color: var(--white);
+  width: 450px;
+  margin: 0 1rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  /* display: none; */
+}
+
+.result-box .top {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-sec);
+}
+
+.result-box .result {
+  font-size: 2rem;
+}
+
+.btns {
+  margin-top: 2rem;
+}
+
+.retake,
+.quit-quiz {
+  border: none;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.retake {
+  border: 1px solid var(--color-sec);
+  background-color: var(--white);
+  color: var(--color-sec);
+}
+
+.quit-quiz {
+  margin-left: 1rem;
+  background-color: var(--color-sec);
+  color: var(--white);
+}
+
+.retake:hover,
+.quit-quiz:hover {
+  transform: translateY(-0.2rem);
+  transition: all 0.3s;
+}
+
+.retake:hover {
+  box-shadow: 0 0.4rem 0.8rem 0 var(--color-sec);
+}
+
+.fas {
+  color: var(--color-sec);
+  font-size: 8rem;
+  margin-bottom: 2rem;
+}

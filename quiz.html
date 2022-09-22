@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="quiz-wrapper">
+      <div class="container">
+        <div class="header">
+          <h1>My Quiz Application</h1>
+          <div class="time">Time left <span class="sec">15sec</span></div>
+        </div>
+        <div id="quiz">
+          <p id="question">What is the answer to this Question</p>
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text">choice 1</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text">choice 2</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text">choice 3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text">choice 4</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-box">
+        <div class="icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <p class="top">You've completed the quiz!</p>
+        <p class="result">
+          You got <span class="score">4</span> out of
+          <span class="total">5</span>
+        </p>
+        <div class="btns">
+          <button class="retake">Retake quiz</button>
+          <button class="quit-quiz">Quit quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
