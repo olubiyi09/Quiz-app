@@ -45,10 +45,21 @@ img {
 
 .app-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: var(--color-sec);
+}
+
+.quiz-app {
+  margin: 0 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 3.5rem;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(247, 249, 250, 0.5);
 }
 
 .start-wrapper button {
@@ -165,7 +176,6 @@ span {
   background-color: var(--white);
   padding: 0;
   margin: 0 1.5rem;
-  /* display: none; */
 }
 
 .header {
@@ -276,6 +286,14 @@ span {
   transform: translateY(-0.2rem);
   transition: all 0.3s;
 }
+.retake a {
+  text-decoration: none;
+  color: var(--color-sec);
+}
+.quit-quiz a {
+  text-decoration: none;
+  color: var(--white);
+}
 
 .retake:hover {
   box-shadow: 0 0.4rem 0.8rem 0 var(--color-sec);
@@ -285,4 +303,49 @@ span {
   color: var(--color-sec);
   font-size: 8rem;
   margin-bottom: 2rem;
+}
+
+.total-point {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+@media screen and (max-width: 376px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .time {
+    font-size: 1.2rem;
+  }
+
+  #question {
+    font-size: 2rem;
+  }
+
+  .result-box .top {
+    font-size: 2rem;
+  }
+
+  .retake,
+  .quit-quiz {
+    border: none;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .retake {
+    border: 1px solid var(--color-sec);
+  }
 }

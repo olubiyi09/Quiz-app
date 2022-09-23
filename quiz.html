@@ -9,33 +9,32 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="quiz-wrapper">
-      <div class="container">
+      <div class="container question-container">
         <div class="header">
           <h1>My Quiz Application</h1>
-          <div class="time">Time left <span class="sec">15sec</span></div>
+          <div class="time">Time left <span class="sec">60 sec</span></div>
         </div>
         <div id="quiz">
           <p id="question">What is the answer to this Question</p>
           <div class="choice-container">
             <p class="choice-prefix">A</p>
-            <p class="choice-text">choice 1</p>
+            <p class="choice-text" data-number="1">choice 1</p>
           </div>
           <div class="choice-container">
             <p class="choice-prefix">B</p>
-            <p class="choice-text">choice 2</p>
+            <p class="choice-text" data-number="2">choice 2</p>
           </div>
           <div class="choice-container">
             <p class="choice-prefix">C</p>
-            <p class="choice-text">choice 3</p>
+            <p class="choice-text" data-number="3">choice 3</p>
           </div>
           <div class="choice-container">
             <p class="choice-prefix">D</p>
-            <p class="choice-text">choice 4</p>
+            <p class="choice-text" data-number="4">choice 4</p>
           </div>
         </div>
       </div>
@@ -46,12 +45,11 @@
         </div>
         <p class="top">You've completed the quiz!</p>
         <p class="result">
-          You got <span class="score">4</span> out of
-          <span class="total">5</span>
+          <div class="total-point"></div>
         </p>
         <div class="btns">
-          <button class="retake">Retake quiz</button>
-          <button class="quit-quiz">Quit quiz</button>
+          <button class="retake"><a href="/quiz.html">Retake quiz</a></button>
+          <button class="quit-quiz"><a href="index.html">Quit quiz</a></button>
         </div>
       </div>
     </div>
