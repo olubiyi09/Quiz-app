@@ -319,7 +319,7 @@ span {
   background-color: #dc3545;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 426px) {
   .quiz-app {
     font-size: 2rem;
   }
