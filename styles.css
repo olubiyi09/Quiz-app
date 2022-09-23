@@ -320,6 +320,10 @@ span {
 }
 
 @media screen and (max-width: 376px) {
+  .quiz-app {
+    font-size: 2rem;
+  }
+
   .header h1 {
     font-size: 1.5rem;
   }
